@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Move</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/favicon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow: hidden; } html { background-color: #111118; }</style>
+	<script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="sk-circle">
+			<div class="sk-circle1 sk-child"></div>
+			<div class="sk-circle2 sk-child"></div>
+			<div class="sk-circle3 sk-child"></div>
+			<div class="sk-circle4 sk-child"></div>
+			<div class="sk-circle5 sk-child"></div>
+			<div class="sk-circle6 sk-child"></div>
+			<div class="sk-circle7 sk-child"></div>
+			<div class="sk-circle8 sk-child"></div>
+			<div class="sk-circle9 sk-child"></div>
+			<div class="sk-circle10 sk-child"></div>
+			<div class="sk-circle11 sk-child"></div>
+			<div class="sk-circle12 sk-child"></div>
+		</div>
+	</div>
+
+
+	<div class="full-page-wrap">
+
+		<img src="img/iphone.png" alt="" class="px px-iphone" data-parallax='{"y" : -200, "smoothness": 15}'>
+		<img src="img/watch.png" alt="" class="px px-watch" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/stone-3.png" alt="" class="px px-stone-3" data-parallax='{"y" : -300, "smoothness": 15}'>
+		<img src="img/stone-1.png" alt="" class="px px-stone-1" data-parallax='{"y" : -500, "smoothness": 15}'>
+		<img src="img/stone-2.png" alt="" class="px px-stone-2" data-parallax='{"y" : -300, "smoothness": 15}'>
+		<img src="img/stone-4.png" alt="" class="px px-stone-4" data-parallax='{"y" : -600, "smoothness": 15}'>
+		<img src="img/stone-5.png" alt="" class="px px-stone-5" data-parallax='{"y" : -300, "smoothness": 15}'>
+		<img src="img/stone-6.png" alt="" class="px px-stone-6" data-parallax='{"y" : -300, "smoothness": 15}'>
+		<img src="img/blure-1.png" alt="" class="px px-blure-1" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/blure-2.png" alt="" class="px px-blure-2" data-parallax='{"y" : -600, "smoothness": 15}'>
+		<img src="img/blure-3.png" alt="" class="px px-blure-3" data-parallax='{"y" : -500, "smoothness": 15}'>
+		<img src="img/blure-4.png" alt="" class="px px-blure-4" data-parallax='{"y" : -300, "smoothness": 15}'>
+		<img src="img/blure-5.png" alt="" class="px px-blure-5" data-parallax='{"y" : -100, "smoothness": 15}'>
+		<img src="img/blure-6.png" alt="" class="px px-blure-6" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/stone-8.png" alt="" class="px px-stone-8" data-parallax='{"y" : -300, "smoothness": 15}'>
+		<img src="img/stone-9.png" alt="" class="px px-stone-9" data-parallax='{"y" : -500, "smoothness": 15}'>
+		<img src="img/stone-10.png" alt="" class="px px-stone-10" data-parallax='{"y" : -500, "smoothness": 15}'>
+		<img src="img/blure-7.png" alt="" class="px px-blure-7" data-parallax='{"y" : -500, "smoothness": 15}'>
+		<img src="img/blure-8.png" alt="" class="px px-blure-8" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/blure-9.png" alt="" class="px px-blure-9" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/blure-10.png" alt="" class="px px-blure-10" data-parallax='{"y" : -600, "smoothness": 15}'>
+		<img src="img/blure-11.png" alt="" class="px px-blure-11" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/stone-11.png" alt="" class="px px-stone-11" data-parallax='{"y" : -500, "smoothness": 15}'>
+		<img src="img/stone-12.png" alt="" class="px px-stone-12" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/blure-12.png" alt="" class="px px-blure-12" data-parallax='{"y" : -500, "smoothness": 15}'>
+		<img src="img/stone-8.png" alt="" class="px px-stone-13" data-parallax='{"y" : -550, "smoothness": 15}'>
+		<img src="img/stone-11.png" alt="" class="px px-stone-15" data-parallax='{"y" : -350, "smoothness": 15}'>
+		<img src="img/blure-4.png" alt="" class="px px-blure-13" data-parallax='{"y" : -300, "smoothness": 15}'>
+		<img src="img/blure-10.png" alt="" class="px px-blure-14" data-parallax='{"y" : -400, "smoothness": 15}'>
+		<img src="img/stone-10.png" alt="" class="px px-stone-16" data-parallax='{"y" : -450, "smoothness": 15}'>
+		<img src="img/blure-9.png" alt="" class="px px-blure-15" data-parallax='{"y" : -300, "smoothness": 15}'>
+
+
+		
+		<div class="scroll-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="menu-logo-wrap">
+							<a href="#"><img src="img/bottom-menu-logo.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="bottom-menu">
+							<ul>
+								<li><a class="scroll-to-uslugi">услуги</a></li>
+								<li><a class="scroll-to-who-we-are">кто мы</a></li>
+								<li><a class="scroll-to-how-it-works">как это работает</a></li>
+								<li><a href="#">наши работы</a></li>
+								<li><a class="scroll-to-contacts" >контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="bottom-phone">
+							<div class="bottom-menu-p1">
+								<img src="img/phone-icon.svg" alt="">
+								<p>7</p>
+								<p>0</p>
+								<p>5</p>
+								<p>5</p>
+							</div>
+							<p class="bottom-menu-p2">Бесплатно по Казаxстану</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-3">
+						<div class="logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-4">
+						<div class="menu">
+							<ul>
+								<li class="active-menu"><a class="scroll-to-uslugi">услуги</a></li>
+								<li><a class="scroll-to-who-we-are">кто мы</a></li>
+								<li><a class="scroll-to-how-it-works">как это работает</a></li>
+								<li><a href="#">наши работы</a></li>
+								<li><a class="scroll-to-contacts">контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-5">
+						<div class="phone">
+							<div class="phone-line1">
+								<img src="img/phone-icon.png" alt="">
+								<p>7055</p>
+							</div>
+							<div class="phone-line2">
+								<p>Бесплатно по Казахстану</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="callback-button-1 fixed-btn">
+			<img src="img/callback-button1.svg" alt="">
+		</a>
+		<a class="callback-button-2 fixed-btn">
+			<img src="img/callback-button2.svg" alt="">
+		</a>
+		<a class="go-up-button fixed-btn">
+			<img src="img/go-up-button.svg" alt="">
+		</a>
+
+		<div class="main-content-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>готовый бизнес</h1>
+						<img src="img/tag-br.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="tables-controller">
+							<div class="dot-wrap dot-wrap-1">
+								<span class="dot-number active">1</span>
+								<div class="dot active">
+									<div class="dot-inner"></div>
+								</div>
+								<p class="active">Готовый Бизнес</p>
+							</div>
+							<div class="dot-wrap dot-wrap-2">
+								<span class="dot-number">2</span>
+								<div class="dot">
+									<div class="dot-inner"></div>
+								</div>
+								<p>Готовый Бизнес 2</p>
+							</div>
+							<div class="dot-wrap dot-wrap-3 ">
+								<span class="dot-number">3</span>
+								<div class="dot">
+									<div class="dot-inner"></div>
+								</div>
+								<p>Готовый Бизнес 3</p>
+							</div>
+							<div class="dot-wrap dot-wrap-4">
+								<span class="dot-number">4</span>
+								<div class="dot">
+									<div class="dot-inner"></div>
+								</div>
+								<p>Готовый Бизнес 4</p>
+							</div>
+							<div class="dot-wrap dot-wrap-5">
+								<span class="dot-number">5</span>
+								<div class="dot">
+									<div class="dot-inner"></div>
+								</div>
+								<p>Готовый Бизнес 5</p>
+							</div>
+							<div class="dot-wrap dot-wrap-6">
+								<span class="dot-number">6</span>
+								<div class="dot">
+									<div class="dot-inner"></div>
+								</div>
+								<p>Готовый Бизнес 6</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-content-2">
+			<div class="container">
+				<div class="row">
+					<div class="content-wrap">
+						<div class="slider">
+							<div class="item item1 item-show">
+									<h1>Продающий дизайн <span>Premium класса</span></h1>
+									<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+									<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+									<p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.</p>
+									<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его</p>
+									<div class="tables-wrap">
+										<div class="tables-left">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-1.png" alt="">
+													<img src="img/table-white1.png" alt="" class="white-icon">
+												</div>
+												<p>Продающий дизайн Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-2.png" alt="">
+													<img src="img/table-white2.png" alt="" class="white-icon">
+												</div>
+												<p>Логотип Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-3.png" alt="">
+													<img src="img/table-white3.png" alt="" class="white-icon">
+												</div>
+												<p>Стильные  визитки (100 шт)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-4.png" alt="">
+													<img src="img/table-white4.png" alt="" class="white-icon">
+												</div>
+												<p>CRM система для работы<br> с клиентами и сайтом</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-5.png" alt="">
+													<img src="img/table-white5.png" alt="" class="white-icon">
+												</div>
+												<p>Мобильное приложение для работы<br> с новыми заказами и клиентами</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-6.png" alt="">
+													<img src="img/table-white6.png" alt="" class="white-icon">
+												</div>
+												<p>Контекстная реклама в поисковых<br> системах Яндекс и Google</p>
+											</div>
+										</div>
+										<div class="tables-right">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-7.png" alt="">
+													<img src="img/table-white7.png" alt="" class="white-icon">
+												</div>
+												<p>Бонус от moVe Бюджет на<br> рекламную компанию 15.000 тенге</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-8.png" alt="">
+													<img src="img/table-white8.png" alt="" class="white-icon">
+												</div>
+												<p>100 % юридически защищенный<br> Договор на оказание услуг для<br> Ваших клиентов</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-9.png" alt="">
+													<img src="img/table-white9.png" alt="" class="white-icon">
+												</div>
+												<p>Гайд (Инструкция для новичков как<br> организовать работу с клиентами)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-10.png" alt="">
+													<img src="img/table-white10.png" alt="" class="white-icon">
+												</div>
+												<p>Продающее коммерческое<br> предложение</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-11.png" alt="">
+													<img src="img/table-white11.png" alt="" class="white-icon">
+												</div>
+												<p>Личный менеджер и маркетолог<br> прикрепленный к вашему проекту</p>
+											</div>
+											<span></span>
+										</div>
+									</div>
+									<div class="tables-bottom">
+										<img src="img/tables-bottom-icon.png" alt="">
+										<p><span>Продающий дизайн Premium класса  -</span> великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. </p>
+									</div>
+							</div>
+							<div class="item item2">
+									<h1>Продающий дизайн <span>Premium класса 2</span></h1>
+									<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+									<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+									<p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.</p>
+									<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его</p>
+									<div class="tables-wrap">
+										<div class="tables-left">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-1.png" alt="">
+													<img src="img/table-white1.png" alt="" class="white-icon">
+												</div>
+												<p>Продающий дизайн Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-2.png" alt="">
+													<img src="img/table-white2.png" alt="" class="white-icon">
+												</div>
+												<p>Логотип Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-3.png" alt="">
+													<img src="img/table-white3.png" alt="" class="white-icon">
+												</div>
+												<p>Стильные  визитки (100 шт)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-4.png" alt="">
+													<img src="img/table-white4.png" alt="" class="white-icon">
+												</div>
+												<p>CRM система для работы<br> с клиентами и сайтом</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-5.png" alt="">
+													<img src="img/table-white5.png" alt="" class="white-icon">
+												</div>
+												<p>Мобильное приложение для работы<br> с новыми заказами и клиентами</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-6.png" alt="">
+													<img src="img/table-white6.png" alt="" class="white-icon">
+												</div>
+												<p>Контекстная реклама в поисковых<br> системах Яндекс и Google</p>
+											</div>
+										</div>
+										<div class="tables-right">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-7.png" alt="">
+													<img src="img/table-white7.png" alt="" class="white-icon">
+												</div>
+												<p>Бонус от moVe Бюджет на<br> рекламную компанию 15.000 тенге</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-8.png" alt="">
+													<img src="img/table-white8.png" alt="" class="white-icon">
+												</div>
+												<p>100 % юридически защищенный<br> Договор на оказание услуг для<br> Ваших клиентов</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-9.png" alt="">
+													<img src="img/table-white9.png" alt="" class="white-icon">
+												</div>
+												<p>Гайд (Инструкция для новичков как<br> организовать работу с клиентами)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-10.png" alt="">
+													<img src="img/table-white10.png" alt="" class="white-icon">
+												</div>
+												<p>Продающее коммерческое<br> предложение</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-11.png" alt="">
+													<img src="img/table-white11.png" alt="" class="white-icon">
+												</div>
+												<p>Личный менеджер и маркетолог<br> прикрепленный к вашему проекту</p>
+											</div>
+											<span></span>
+										</div>
+									</div>
+									<div class="tables-bottom">
+										<img src="img/tables-bottom-icon.png" alt="">
+										<p><span>Продающий дизайн Premium класса  -</span> великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. </p>
+									</div>
+							</div>
+							<div class="item item3">
+									<h1>Продающий дизайн <span>Premium класса 3</span></h1>
+									<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+									<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+									<p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.</p>
+									<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его</p>
+									<div class="tables-wrap">
+										<div class="tables-left">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-1.png" alt="">
+													<img src="img/table-white1.png" alt="" class="white-icon">
+												</div>
+												<p>Продающий дизайн Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-2.png" alt="">
+													<img src="img/table-white2.png" alt="" class="white-icon">
+												</div>
+												<p>Логотип Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-3.png" alt="">
+													<img src="img/table-white3.png" alt="" class="white-icon">
+												</div>
+												<p>Стильные  визитки (100 шт)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-4.png" alt="">
+													<img src="img/table-white4.png" alt="" class="white-icon">
+												</div>
+												<p>CRM система для работы<br> с клиентами и сайтом</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-5.png" alt="">
+													<img src="img/table-white5.png" alt="" class="white-icon">
+												</div>
+												<p>Мобильное приложение для работы<br> с новыми заказами и клиентами</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-6.png" alt="">
+													<img src="img/table-white6.png" alt="" class="white-icon">
+												</div>
+												<p>Контекстная реклама в поисковых<br> системах Яндекс и Google</p>
+											</div>
+										</div>
+										<div class="tables-right">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-7.png" alt="">
+													<img src="img/table-white7.png" alt="" class="white-icon">
+												</div>
+												<p>Бонус от moVe Бюджет на<br> рекламную компанию 15.000 тенге</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-8.png" alt="">
+													<img src="img/table-white8.png" alt="" class="white-icon">
+												</div>
+												<p>100 % юридически защищенный<br> Договор на оказание услуг для<br> Ваших клиентов</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-9.png" alt="">
+													<img src="img/table-white9.png" alt="" class="white-icon">
+												</div>
+												<p>Гайд (Инструкция для новичков как<br> организовать работу с клиентами)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-10.png" alt="">
+													<img src="img/table-white10.png" alt="" class="white-icon">
+												</div>
+												<p>Продающее коммерческое<br> предложение</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-11.png" alt="">
+													<img src="img/table-white11.png" alt="" class="white-icon">
+												</div>
+												<p>Личный менеджер и маркетолог<br> прикрепленный к вашему проекту</p>
+											</div>
+											<span></span>
+										</div>
+									</div>
+									<div class="tables-bottom">
+										<img src="img/tables-bottom-icon.png" alt="">
+										<p><span>Продающий дизайн Premium класса  -</span> великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. </p>
+									</div>
+							</div>
+							<div class="item item4">
+									<h1>Продающий дизайн <span>Premium класса 4</span></h1>
+									<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+									<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+									<p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.</p>
+									<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его</p>
+									<div class="tables-wrap">
+										<div class="tables-left">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-1.png" alt="">
+													<img src="img/table-white1.png" alt="" class="white-icon">
+												</div>
+												<p>Продающий дизайн Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-2.png" alt="">
+													<img src="img/table-white2.png" alt="" class="white-icon">
+												</div>
+												<p>Логотип Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-3.png" alt="">
+													<img src="img/table-white3.png" alt="" class="white-icon">
+												</div>
+												<p>Стильные  визитки (100 шт)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-4.png" alt="">
+													<img src="img/table-white4.png" alt="" class="white-icon">
+												</div>
+												<p>CRM система для работы<br> с клиентами и сайтом</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-5.png" alt="">
+													<img src="img/table-white5.png" alt="" class="white-icon">
+												</div>
+												<p>Мобильное приложение для работы<br> с новыми заказами и клиентами</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-6.png" alt="">
+													<img src="img/table-white6.png" alt="" class="white-icon">
+												</div>
+												<p>Контекстная реклама в поисковых<br> системах Яндекс и Google</p>
+											</div>
+										</div>
+										<div class="tables-right">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-7.png" alt="">
+													<img src="img/table-white7.png" alt="" class="white-icon">
+												</div>
+												<p>Бонус от moVe Бюджет на<br> рекламную компанию 15.000 тенге</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-8.png" alt="">
+													<img src="img/table-white8.png" alt="" class="white-icon">
+												</div>
+												<p>100 % юридически защищенный<br> Договор на оказание услуг для<br> Ваших клиентов</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-9.png" alt="">
+													<img src="img/table-white9.png" alt="" class="white-icon">
+												</div>
+												<p>Гайд (Инструкция для новичков как<br> организовать работу с клиентами)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-10.png" alt="">
+													<img src="img/table-white10.png" alt="" class="white-icon">
+												</div>
+												<p>Продающее коммерческое<br> предложение</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-11.png" alt="">
+													<img src="img/table-white11.png" alt="" class="white-icon">
+												</div>
+												<p>Личный менеджер и маркетолог<br> прикрепленный к вашему проекту</p>
+											</div>
+											<span></span>
+										</div>
+									</div>
+									<div class="tables-bottom">
+										<img src="img/tables-bottom-icon.png" alt="">
+										<p><span>Продающий дизайн Premium класса  -</span> великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. </p>
+									</div>
+							</div>
+							<div class="item item5">
+									<h1>Продающий дизайн <span>Premium класса 5</span></h1>
+									<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+									<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+									<p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.</p>
+									<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его</p>
+									<div class="tables-wrap">
+										<div class="tables-left">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-1.png" alt="">
+													<img src="img/table-white1.png" alt="" class="white-icon">
+												</div>
+												<p>Продающий дизайн Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-2.png" alt="">
+													<img src="img/table-white2.png" alt="" class="white-icon">
+												</div>
+												<p>Логотип Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-3.png" alt="">
+													<img src="img/table-white3.png" alt="" class="white-icon">
+												</div>
+												<p>Стильные  визитки (100 шт)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-4.png" alt="">
+													<img src="img/table-white4.png" alt="" class="white-icon">
+												</div>
+												<p>CRM система для работы<br> с клиентами и сайтом</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-5.png" alt="">
+													<img src="img/table-white5.png" alt="" class="white-icon">
+												</div>
+												<p>Мобильное приложение для работы<br> с новыми заказами и клиентами</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-6.png" alt="">
+													<img src="img/table-white6.png" alt="" class="white-icon">
+												</div>
+												<p>Контекстная реклама в поисковых<br> системах Яндекс и Google</p>
+											</div>
+										</div>
+										<div class="tables-right">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-7.png" alt="">
+													<img src="img/table-white7.png" alt="" class="white-icon">
+												</div>
+												<p>Бонус от moVe Бюджет на<br> рекламную компанию 15.000 тенге</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-8.png" alt="">
+													<img src="img/table-white8.png" alt="" class="white-icon">
+												</div>
+												<p>100 % юридически защищенный<br> Договор на оказание услуг для<br> Ваших клиентов</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-9.png" alt="">
+													<img src="img/table-white9.png" alt="" class="white-icon">
+												</div>
+												<p>Гайд (Инструкция для новичков как<br> организовать работу с клиентами)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-10.png" alt="">
+													<img src="img/table-white10.png" alt="" class="white-icon">
+												</div>
+												<p>Продающее коммерческое<br> предложение</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-11.png" alt="">
+													<img src="img/table-white11.png" alt="" class="white-icon">
+												</div>
+												<p>Личный менеджер и маркетолог<br> прикрепленный к вашему проекту</p>
+											</div>
+											<span></span>
+										</div>
+									</div>
+									<div class="tables-bottom">
+										<img src="img/tables-bottom-icon.png" alt="">
+										<p><span>Продающий дизайн Premium класса  -</span> великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. </p>
+									</div>
+							</div>
+							<div class="item item6">
+									<h1>Продающий дизайн <span>Premium класса 6</span></h1>
+									<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+									<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+									<p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.</p>
+									<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его</p>
+									<div class="tables-wrap">
+										<div class="tables-left">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-1.png" alt="">
+													<img src="img/table-white1.png" alt="" class="white-icon">
+												</div>
+												<p>Продающий дизайн Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-2.png" alt="">
+													<img src="img/table-white2.png" alt="" class="white-icon">
+												</div>
+												<p>Логотип Premium класса</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-3.png" alt="">
+													<img src="img/table-white3.png" alt="" class="white-icon">
+												</div>
+												<p>Стильные  визитки (100 шт)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-4.png" alt="">
+													<img src="img/table-white4.png" alt="" class="white-icon">
+												</div>
+												<p>CRM система для работы<br> с клиентами и сайтом</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-5.png" alt="">
+													<img src="img/table-white5.png" alt="" class="white-icon">
+												</div>
+												<p>Мобильное приложение для работы<br> с новыми заказами и клиентами</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-6.png" alt="">
+													<img src="img/table-white6.png" alt="" class="white-icon">
+												</div>
+												<p>Контекстная реклама в поисковых<br> системах Яндекс и Google</p>
+											</div>
+										</div>
+										<div class="tables-right">
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-7.png" alt="">
+													<img src="img/table-white7.png" alt="" class="white-icon">
+												</div>
+												<p>Бонус от moVe Бюджет на<br> рекламную компанию 15.000 тенге</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-8.png" alt="">
+													<img src="img/table-white8.png" alt="" class="white-icon">
+												</div>
+												<p>100 % юридически защищенный<br> Договор на оказание услуг для<br> Ваших клиентов</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-9.png" alt="">
+													<img src="img/table-white9.png" alt="" class="white-icon">
+												</div>
+												<p>Гайд (Инструкция для новичков как<br> организовать работу с клиентами)</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-10.png" alt="">
+													<img src="img/table-white10.png" alt="" class="white-icon">
+												</div>
+												<p>Продающее коммерческое<br> предложение</p>
+											</div>
+											<div>
+												<div class="img-wrap">
+													<img src="img/table-2-list-item-11.png" alt="">
+													<img src="img/table-white11.png" alt="" class="white-icon">
+												</div>
+												<p>Личный менеджер и маркетолог<br> прикрепленный к вашему проекту</p>
+											</div>
+											<span></span>
+										</div>
+									</div>
+									<div class="tables-bottom">
+										<img src="img/tables-bottom-icon.png" alt="">
+										<p><span>Продающий дизайн Premium класса  -</span> великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. </p>
+									</div>
+							</div>
+						</div>
+						<div class="calc">
+							<div class="calc1">
+								<img src="img/calc1.svg" alt="">
+								<p>калькулятор</p>
+							</div>
+							<div class="calc2 calc-item" id="calc-item-2">
+								<div class="line-top">
+									<img src="img/calc2.svg" alt="">
+									<h1>ДИЗАЙН</h1>
+									<div class="slide-toggle slide-toggle-1">
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="line2 line">
+									<h1>ШАБЛОН</h1>
+									<div class="check-wrap">
+										<img class="check-off" src="img/check-off.svg" alt="">
+										<img class="check-on" src="img/check-on.svg" alt="">
+									</div>
+								</div>
+								<div class="line3 line">
+									<h1>ОРИГИНАЛЬНЫЙ</h1>
+									<div class="check-wrap">
+										<img class="check-off" src="img/check-off.svg" alt="">
+										<img class="check-on" src="img/check-on.svg" alt="">
+									</div>
+								</div>
+								<div class="line4 line">
+									<h1>ЦЕНА:</h1>
+									<div class="price">
+										<h1>0.000</h1>
+										<img src="img/tenge.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="calc3 calc-item" id="calc-item-3">
+								<div class="line-top">
+									<img src="img/calc3.svg" alt="">
+									<h1>ЛОГОТИП</h1>
+									<div class="slide-toggle slide-toggle-2">
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="line2 line">
+									<h1>ШАБЛОН</h1>
+									<div class="check-wrap">
+										<img class="check-off" src="img/check-off.svg" alt="">
+										<img class="check-on" src="img/check-on.svg" alt="">
+									</div>
+								</div>
+								<div class="line3 line">
+									<h1>ОРИГИНАЛЬНЫЙ</h1>
+									<div class="check-wrap">
+										<img class="check-off" src="img/check-off.svg" alt="">
+										<img class="check-on" src="img/check-on.svg" alt="">
+									</div>
+								</div>
+								<div class="line4 line">
+									<h1>ЦЕНА:</h1>
+									<div class="price">
+										<h1>25.800</h1>
+										<img src="img/tenge.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="calc4 calc-item">
+								<div class="line-top">
+									<img class="google-logo" src="img/calc4-1.svg" alt="">
+									<h1>контекстная реклама</h1>
+								</div>
+								<div class="line4 line">
+									<h1>GOOGLE</h1>
+									<div class="price">
+										<h1>15.000</h1>
+										<img src="img/tenge.svg" alt="">
+									</div>
+								</div>
+								<div class="line5 line">
+									<h1>YANDEX</h1>
+									<div class="price">
+										<h1>15.000</h1>
+										<img src="img/tenge.svg" alt="">
+									</div>
+								</div>
+								<div class="line-top">
+									<img src="img/calc4-2.svg" alt="">
+									<h1 class="h1-2">В ПОДАРОК!</h1>
+								</div>
+							</div>
+							<div class="calc5 calc-item" id="calc-item-5">
+								<div class="line-top">
+									<img src="img/calc5.svg" alt="">
+									<h1>ВИЗИТКИ</h1>
+									<div class="slide-toggle slide-toggle-3">
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								<div class="line2 line">
+									<h1>ШАБЛОН</h1>
+									<div class="check-wrap">
+										<img class="check-off" src="img/check-off.svg" alt="">
+										<img class="check-on" src="img/check-on.svg" alt="">
+									</div>
+								</div>
+								<div class="line3 line">
+									<h1>ОРИГИНАЛЬНЫЙ</h1>
+									<div class="check-wrap">
+										<img class="check-off" src="img/check-off.svg" alt="">
+										<img class="check-on" src="img/check-on.svg" alt="">
+									</div>
+								</div>
+								<div class="line4 line">
+									<h1>ЦЕНА:</h1>
+									<div class="price">
+										<h1>50.800</h1>
+										<img src="img/tenge.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="calc6 calc-item">
+								<div class="line4 line">
+									<h1>ИТОГО ЦЕНА:</h1>
+									<div class="price">
+										<h1>277.100</h1>
+										<img src="img/tenge-blue.svg" alt="">
+									</div>
+								</div>
+								<div class="placeholder"></div>
+								<div class="g-recaptcha" data-sitekey="6LeVd0UUAAAAAB5VdaoOytMwklWRIg5SXfz-VRwU" data-theme="dark"></div>
+								<a>оформить заказ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="footer-menu-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-3">
+						<div class="menu-logo-wrap">
+							<a href="#"><img src="img/bottom-menu-logo.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-sm-7 col-xs-2">
+						<div class="bottom-menu">
+							<ul>
+								<li><a class="scroll-to-uslugi">услуги</a></li>
+								<li><a class="scroll-to-who-we-are">кто мы</a></li>
+								<li><a class="scroll-to-how-it-works">как это работает</a></li>
+								<li><a href="#">наши работы</a></li>
+								<li><a class="scrooll-to-contacts">контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-7">
+						<div class="bottom-phone">
+							<div class="bottom-menu-p1">
+								<img src="img/phone-icon.svg" alt="">
+								<p>7</p>
+								<p>0</p>
+								<p>5</p>
+								<p>5</p>
+							</div>
+							<p class="bottom-menu-p2">Бесплатно по Казаxстану</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-last-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-sm-4">
+						<p>Создание и продвижение веб сайтов и<br>мобильных приложений в Казахстане под ключ</p>
+					</div>
+					<div class="col-md-5 col-sm-6">
+						<h1>© copyright 2007-2018. <span>all rights reserved.</span></h1>
+					</div>
+					<div class="col-sm-2">
+						<div class="last-item-wrap">
+							<p>design by <a href="https://idex.pro/">idex.pro</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

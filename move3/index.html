@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Move</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/favicon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>
+		body {
+			opacity: 0;
+			overflow: hidden;
+		}
+
+		html {
+			background-color: #111118;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="sk-circle">
+			<div class="sk-circle1 sk-child"></div>
+			<div class="sk-circle2 sk-child"></div>
+			<div class="sk-circle3 sk-child"></div>
+			<div class="sk-circle4 sk-child"></div>
+			<div class="sk-circle5 sk-child"></div>
+			<div class="sk-circle6 sk-child"></div>
+			<div class="sk-circle7 sk-child"></div>
+			<div class="sk-circle8 sk-child"></div>
+			<div class="sk-circle9 sk-child"></div>
+			<div class="sk-circle10 sk-child"></div>
+			<div class="sk-circle11 sk-child"></div>
+			<div class="sk-circle12 sk-child"></div>
+		</div>
+	</div>
+
+	<div class="full-page-wrap">
+		<!-- px1 -->
+		<img src="img/big-triangle.png" class="px px-big-triangle active" style="right: 1558px">
+		<img src="img/big-triangle2.png" class="px px-big-triangle2 active" style="right: 940px;display: none!important">
+		<img src="img/mid-triangle.png" class="px px-mid-triangle active" style="right: 220px;display: none!important">
+		<img src="img/small-triangle.png" class="px px-small-triangle active" style="right: 640px;display: none!important">
+		<img src="img/smalest-triangle.png" class="px px-smalest-triangle active" style="right: 1500px;display: none!important">
+		<img src="img/stone1.png" class="px px-stone1 active" style="right: 1560px;display: none!important">
+		<img src="img/stone2.png" class="px px-stone2 active" style="right: 1235px;display: none!important">
+		<img src="img/stone3.png" class="px px-stone3 active" style="right: 665px;display: none!important">
+		<img src="img/stone4.png" class="px px-stone4 active" style="right: 105px;display: none!important">
+		<img src="img/stone5.png" class="px px-stone5 active" style="right: 150px">
+		<img src="img/stone6.png" class="px px-stone6 active" style="right: 100px;display: none!important">
+		<img src="img/stone7.png" class="px px-stone7 active" style="right: 780px;display: none!important">
+		<img src="img/stone8.png" class="px px-stone8 active" style="right: 1640px;display: none!important">
+		<img src="img/watch.png" class="px px-watch active" style="right: 205px">
+		<img src="img/circle.png" class="px px-circle active" style="right: 105px">
+		<img src="img/big-circlr.png" class="px px-big-circle active" style="right: 0;display: none!important">
+		<img src="img/blure1.png" class="px px-blure1 active" style="right: 100px;display: none!important">
+		<img src="img/plane.png" class="px px-plane active" style="right: 50px;display: none!important">
+		<img src="img/blure2.png" class="px px-blure2 active" style="right: 50px;display: none!important">
+		<img src="img/blure3.png" class="px px-blure3 active" style="right: 250px;display: none!important">
+		<!-- px2 -->
+		<img src="img/big-triangle.png" class="px2 px-big-triangle" style="right: 1492px;display: none!important">
+		<img src="img/big-triangle2.png" class="px2 px-big-triangle2" style="right: 940px;display: none!important">
+		<img src="img/mid-triangle.png" class="px2 px-mid-triangle" style="right: 220px;display: none!important">
+		<img src="img/small-triangle.png" class="px2 px-small-triangle" style="right: 640px">
+		<img src="img/smalest-triangle.png" class="px2 px-smalest-triangle" style="right: 1500px;display: none!important">
+		<img src="img/stone1.png" class="px2 px-stone1" style="right: 1560px;display: none!important">
+		<img src="img/stone2.png" class="px2 px-stone2" style="right: 1235px">
+		<img src="img/stone3.png" class="px2 px-stone3" style="right: 665px;display: none!important">
+		<img src="img/stone4.png" class="px2 px-stone4" style="right: 105px;display: none!important">
+		<img src="img/stone5.png" class="px2 px-stone5" style="right: 150px;display: none!important">
+		<img src="img/stone6.png" class="px2 px-stone6" style="right: 100px;display: none!important">
+		<img src="img/stone7.png" class="px2 px-stone7" style="right: 780px;display: none!important">
+		<img src="img/stone8.png" class="px2 px-stone8" style="right: 1640px;display: none!important">
+		<img src="img/small-triangle.png" class="px2 px-watch" style="right: 1550px">
+		<img src="img/circle.png" class="px2 px-circle" style="right: 105px;display: none!important">
+		<img src="img/big-circlr.png" class="px2 px-big-circle" style="right: 0;display: none!important">
+		<img src="img/blure1.png" class="px2 px-blure1" style="right: 100px;display: none!important">
+		<img src="img/plane.png" class="px2 px-plane" style="right: 50px;display: none!important">
+		<img src="img/blure2.png" class="px2 px-blure2" style="right: 50px;display: none!important">
+		<img src="img/blure3.png" class="px2 px-blure3" style="right: 250px;display: none!important">
+		<!-- px3 -->
+		<img src="img/big-triangle.png" class="px3 px-big-triangle" style="right: 1492px;display: none!important">
+		<img src="img/big-triangle2.png" class="px3 px-big-triangle2" style="right: 940px">
+		<img src="img/mid-triangle.png" class="px3 px-mid-triangle" style="right: 220px">
+		<img src="img/small-triangle.png" class="px3 px-small-triangle" style="right: 640px;display: none!important">
+		<img src="img/smalest-triangle.png" class="px3 px-smalest-triangle" style="right: 1500px;display: none!important">
+		<img src="img/stone1.png" class="px3 px-stone1" style="right: 1560px;display: none!important">
+		<img src="img/stone2.png" class="px3 px-stone2" style="right: 1235px;display: none!important">
+		<img src="img/stone3.png" class="px3 px-stone3" style="right: 665px;display: none!important">
+		<img src="img/stone4.png" class="px3 px-stone4" style="right: 105px;display: none!important">
+		<img src="img/stone5.png" class="px3 px-stone5" style="right: 150px;display: none!important">
+		<img src="img/stone6.png" class="px3 px-stone6" style="right: 100px;display: none!important">
+		<img src="img/stone7.png" class="px3 px-stone7" style="right: 780px;display: none!important">
+		<img src="img/stone8.png" class="px3 px-stone8" style="right: 1640px;display: none!important">
+		<img src="img/small-triangle.png" class="px3 px-watch" style="right: 1550px;display: none!important">
+		<img src="img/circle.png" class="px3 px-circle" style="right: 105px;display: none!important">
+		<img src="img/big-circlr.png" class="px3 px-big-circle" style="right: 0;display: none!important">
+		<img src="img/blure1.png" class="px3 px-blure1" style="right: 100px;display: none!important">
+		<img src="img/plane.png" class="px3 px-plane" style="right: 50px">
+		<img src="img/blure2.png" class="px3 px-blure2" style="right: 50px;display: none!important">
+		<img src="img/blure3.png" class="px3 px-blure3" style="right: 250px;display: none!important">
+		<!-- px4 -->
+		<img src="img/big-triangle.png" class="px4 px-big-triangle" style="right: 1492px;display: none!important">
+		<img src="img/big-triangle2.png" class="px4 px-big-triangle2" style="right: 940px;display: none!important">
+		<img src="img/mid-triangle.png" class="px4 px-mid-triangle" style="right: 220px;display: none!important">
+		<img src="img/small-triangle.png" class="px4 px-small-triangle" style="right: 640px;display: none!important">
+		<img src="img/smalest-triangle.png" class="px4 px-smalest-triangle" style="right: 1500px">
+		<img src="img/stone1.png" class="px4 px-stone1" style="right: 1560px">
+		<img src="img/stone2.png" class="px4 px-stone2" style="right: 1235px;display: none!important">
+		<img src="img/stone3.png" class="px4 px-stone3" style="right: 665px">
+		<img src="img/stone4.png" class="px4 px-stone4" style="right: 105px;display: none!important">
+		<img src="img/stone5.png" class="px4 px-stone5" style="right: 150px;display: none!important">
+		<img src="img/stone6.png" class="px4 px-stone6" style="right: 100px;display: none!important">
+		<img src="img/stone7.png" class="px4 px-stone7" style="right: 780px;display: none!important">
+		<img src="img/stone8.png" class="px4 px-stone8" style="right: 1640px;display: none!important">
+		<img src="img/small-triangle.png" class="px4 px-watch" style="right: 1550px;display: none!important">
+		<img src="img/circle.png" class="px4 px-circle" style="right: 105px;display: none!important">
+		<img src="img/big-circlr.png" class="px4 px-big-circle" style="right: 0;display: none!important">
+		<img src="img/blure1.png" class="px4 px-blure1" style="right: 100px;display: none!important">
+		<img src="img/plane.png" class="px4 px-plane" style="right: 50px;display: none!important">
+		<img src="img/blure2.png" class="px4 px-blure2" style="right: 50px;display: none!important">
+		<img src="img/blure3.png" class="px4 px-blure3" style="right: 250px;display: none!important">
+		<!-- px5 -->
+		<img src="img/big-triangle.png" class="px5 px-big-triangle" style="right: 1492px;display: none!important">
+		<img src="img/big-triangle2.png" class="px5 px-big-triangle2" style="right: 940px;display: none!important">
+		<img src="img/mid-triangle.png" class="px5 px-mid-triangle" style="right: 220px;display: none!important">
+		<img src="img/small-triangle.png" class="px5 px-small-triangle" style="right: 640px;display: none!important">
+		<img src="img/smalest-triangle.png" class="px5 px-smalest-triangle" style="right: 1500px;display: none!important">
+		<img src="img/stone1.png" class="px5 px-stone1" style="right: 1560px;display: none!important">
+		<img src="img/stone2.png" class="px5 px-stone2" style="right: 1235px;display: none!important">
+		<img src="img/stone3.png" class="px5 px-stone3" style="right: 665px;display: none!important">
+		<img src="img/stone4.png" class="px5 px-stone4" style="right: 105px">
+		<img src="img/stone5.png" class="px5 px-stone5" style="right: 150px;display: none!important">
+		<img src="img/stone6.png" class="px5 px-stone6" style="right: 100px">
+		<img src="img/stone7.png" class="px5 px-stone7" style="right: 780px;display: none!important">
+		<img src="img/stone8.png" class="px5 px-stone8" style="right: 1640px;display: none!important">
+		<img src="img/small-triangle.png" class="px5 px-watch" style="right: 1550px;display: none!important">
+		<img src="img/circle.png" class="px5 px-circle" style="right: 105px">
+		<img src="img/big-circlr.png" class="px5 px-big-circle" style="right: 0;display: none!important">
+		<img src="img/blure1.png" class="px5 px-blure1" style="right: 100px;display: none!important">
+		<img src="img/plane.png" class="px5 px-plane" style="right: 50px;display: none!important">
+		<img src="img/blure2.png" class="px5 px-blure2" style="right: 50px;display: none!important">
+		<img src="img/blure3.png" class="px5 px-blure3" style="right: 250px;display: none!important">
+		<!-- px6 -->
+		<img src="img/big-triangle.png" class="px6 px-big-triangle" style="right: 1492px;display: none!important">
+		<img src="img/big-triangle2.png" class="px6 px-big-triangle2" style="right: 940px;display: none!important">
+		<img src="img/mid-triangle.png" class="px6 px-mid-triangle" style="right: 220px;display: none!important">
+		<img src="img/small-triangle.png" class="px6 px-small-triangle" style="right: 640px;display: none!important">
+		<img src="img/smalest-triangle.png" class="px6 px-smalest-triangle" style="right: 1500px;display: none!important">
+		<img src="img/stone1.png" class="px6 px-stone1" style="right: 1560px;display: none!important">
+		<img src="img/stone2.png" class="px6 px-stone2" style="right: 1235px;display: none!important">
+		<img src="img/stone3.png" class="px6 px-stone3" style="right: 665px;display: none!important">
+		<img src="img/stone4.png" class="px6 px-stone4" style="right: 105px;display: none!important">
+		<img src="img/stone5.png" class="px6 px-stone5" style="right: 150px;display: none!important">
+		<img src="img/stone6.png" class="px6 px-stone6" style="right: 100px;display: none!important">
+		<img src="img/stone7.png" class="px6 px-stone7" style="right: 780px;display: none!important">
+		<img src="img/stone8.png" class="px6 px-stone8" style="right: 1640px">
+		<img src="img/small-triangle.png" class="px6 px-watch" style="right: 1550px;display: none!important">
+		<img src="img/circle.png" class="px6 px-circle" style="right: 105px;display: none!important">
+		<img src="img/big-circlr.png" class="px6 px-big-circle" style="right: 0">
+		<img src="img/blure1.png" class="px6 px-blure1" style="right: 100px">
+		<img src="img/plane.png" class="px6 px-plane" style="right: 50px;display: none!important">
+		<img src="img/blure2.png" class="px6 px-blure2" style="right: 50px;display: none!important">
+		<img src="img/blure3.png" class="px6 px-blure3" style="right: 250px">
+
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-3">
+						<div class="logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-4">
+						<div class="menu">
+							<ul>
+								<li>
+									<a class="scroll-to-uslugi">услуги</a>
+								</li>
+								<li>
+									<a class="scroll-to-who-we-are">кто мы</a>
+								</li>
+								<li>
+									<a class="scroll-to-how-it-works">как это работает</a>
+								</li>
+								<li class="active">
+									<a href="#">наши работы</a>
+								</li>
+								<li>
+									<a class="scroll-to-contacts">контакты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-5">
+						<div class="phone">
+							<div class="phone-line1">
+								<img src="img/phone-icon.png" alt="">
+								<p>7055</p>
+							</div>
+							<div class="phone-line2">
+								<p>Бесплатно по Казахстану</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="second-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<ul>
+							<li class="active">
+								<a href="#">веб сайты</a>
+							</li>
+							<li>
+								<a href="#">мобильные приложения</a>
+							</li>
+							<li>
+								<a href="#">полиграфия и фирм-й стиль</a>
+							</li>
+							<li>
+								<a href="#">маркетинг и SMM</a>
+							</li>
+							<li>
+								<a href="#">видеоинфографика</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap-main-slider">
+			<div class="container big-container">
+				<div class="row">
+					<div class="owl-carousel">
+						<div class="slide">
+							<div class="slide-left">
+							<img class="iphone" src="img/slideriphone.png" alt="">
+								<img src="img/Macbook2.png" alt="" class="macbook">
+								<div class="inside-macbook">
+									<div class="sliders-wrap">
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+									</div>
+									<div class="nav prev">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px" height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+									<div class="nav next">
+										<svg style="transform: rotate(180deg)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px"
+										 height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="slide-right">
+								<h1>Проект
+									<span>№1</span>
+								</h1>
+								<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных
+									домах на берегу Семантика большого языкового океана.</p>
+								<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+									страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+								<div class="project-item">
+									<img src="img/itemvlogo.svg" alt="">
+									<p>Бонус от moVe Бюджет на рекламную кщипанию 15.000 тенге</p>
+								</div>
+								<div class="project-item">
+									<img src="img/item2logo.svg" alt="">
+									<p>100% юридически защищенный Договор на оказание услуг для Ваших клиентов</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-left">
+								<img class="iphone" src="img/slideriphone.png" alt="">
+								<img src="img/Macbook2.png" alt="" class="macbook">
+								<div class="inside-macbook">
+									<div class="sliders-wrap">
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+									</div>
+									<div class="nav prev">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px" height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+									<div class="nav next">
+										<svg style="transform: rotate(180deg)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px"
+										 height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="slide-right">
+								<h1>Проект
+									<span>№2</span>
+								</h1>
+								<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных
+									домах на берегу Семантика большого языкового океана.</p>
+								<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+									страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+								<div class="project-item">
+									<img src="img/itemvlogo.svg" alt="">
+									<p>Бонус от moVe Бюджет на рекламную кщипанию 15.000 тенге</p>
+								</div>
+								<div class="project-item">
+									<img src="img/item2logo.svg" alt="">
+									<p>100% юридически защищенный Договор на оказание услуг для Ваших клиентов</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-left">
+							<img class="iphone" src="img/slideriphone.png" alt="">
+								<img src="img/Macbook2.png" alt="" class="macbook">
+								<div class="inside-macbook">
+									<div class="sliders-wrap">
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+									</div>
+									<div class="nav prev">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px" height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+									<div class="nav next">
+										<svg style="transform: rotate(180deg)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px"
+										 height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="slide-right">
+								<h1>Проект
+									<span>№3</span>
+								</h1>
+								<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных
+									домах на берегу Семантика большого языкового океана.</p>
+								<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+									страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+								<div class="project-item">
+									<img src="img/itemvlogo.svg" alt="">
+									<p>Бонус от moVe Бюджет на рекламную кщипанию 15.000 тенге</p>
+								</div>
+								<div class="project-item">
+									<img src="img/item2logo.svg" alt="">
+									<p>100% юридически защищенный Договор на оказание услуг для Ваших клиентов</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-left">
+							<img class="iphone" src="img/slideriphone.png" alt="">
+								<img src="img/Macbook2.png" alt="" class="macbook">
+								<div class="inside-macbook">
+									<div class="sliders-wrap">
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+									</div>
+									<div class="nav prev">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px" height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+									<div class="nav next">
+										<svg style="transform: rotate(180deg)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px"
+										 height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="slide-right">
+								<h1>Проект
+									<span>№4</span>
+								</h1>
+								<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных
+									домах на берегу Семантика большого языкового океана.</p>
+								<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+									страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+								<div class="project-item">
+									<img src="img/itemvlogo.svg" alt="">
+									<p>Бонус от moVe Бюджет на рекламную кщипанию 15.000 тенге</p>
+								</div>
+								<div class="project-item">
+									<img src="img/item2logo.svg" alt="">
+									<p>100% юридически защищенный Договор на оказание услуг для Ваших клиентов</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-left">
+							<img class="iphone" src="img/slideriphone.png" alt="">
+								<img src="img/Macbook2.png" alt="" class="macbook">
+								<div class="inside-macbook">
+									<div class="sliders-wrap">
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+									</div>
+									<div class="nav prev">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px" height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+									<div class="nav next">
+										<svg style="transform: rotate(180deg)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px"
+										 height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="slide-right">
+								<h1>Проект
+									<span>№5</span>
+								</h1>
+								<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных
+									домах на берегу Семантика большого языкового океана.</p>
+								<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+									страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+								<div class="project-item">
+									<img src="img/itemvlogo.svg" alt="">
+									<p>Бонус от moVe Бюджет на рекламную кщипанию 15.000 тенге</p>
+								</div>
+								<div class="project-item">
+									<img src="img/item2logo.svg" alt="">
+									<p>100% юридически защищенный Договор на оказание услуг для Ваших клиентов</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-left">
+							<img class="iphone" src="img/slideriphone.png" alt="">
+								<img src="img/Macbook2.png" alt="" class="macbook">
+								<div class="inside-macbook">
+									<div class="sliders-wrap">
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+										<div class="slide-sm">
+											<img src="img/inside-macbook.png" alt="">
+										</div>
+									</div>
+									<div class="nav prev">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px" height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+									<div class="nav next">
+										<svg style="transform: rotate(180deg)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53px"
+										 height="5px">
+											<path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M5.000,2.999 L5.000,4.999 L0.664,2.593 L5.000,-0.000 L5.000,2.000 L53.000,2.000 L53.000,2.999 L5.000,2.999 Z"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="slide-right">
+								<h1>Проект
+									<span>№6</span>
+								</h1>
+								<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных
+									домах на берегу Семантика большого языкового океана.</p>
+								<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+									страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+								<div class="project-item">
+									<img src="img/itemvlogo.svg" alt="">
+									<p>Бонус от moVe Бюджет на рекламную кщипанию 15.000 тенге</p>
+								</div>
+								<div class="project-item">
+									<img src="img/item2logo.svg" alt="">
+									<p>100% юридически защищенный Договор на оказание услуг для Ваших клиентов</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-items">
+						<p>Создание и продвижение веб сайтов и
+							<br> мобильных приложений в Казахстане под ключ</p>
+						<h1>© copyright 2007-2018.
+							<span>all rights reserved.</span>
+						</h1>
+						<span>design by
+							<a href="https://idex.pro/">idex.pro</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
